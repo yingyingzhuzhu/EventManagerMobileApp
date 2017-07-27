@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Mobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<!-- EVENTS PAGE -->
+	<div data-role="page" id="events" data-theme="a">
+		<!-- HEADER -->
+		<div data-role="header">
+			<h1>Event</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#events" data-icon="calendar" data-transition="slideUp">Events</a></li>
+					<li><a href="#create" data-icon="plus" data-transition="slideUp">Create Event</a></li>
+					<li><a href="#settings" data-icon="gear" data-transition="slideUp">Settings</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- MAIN -->
+		<div data-role="main" class="ui-content">
+			<ul id="eventList" data-role="listview" data-split-icon="delete">
+				<!-- insert data from javascrip -->
+			</ul>
+		</div>
+		<!-- FOOTER -->
+		<div data-role="footer" style="text-align: center">
+			Event Mobile &copy; 2017
+		</div>
+	</div>
+
+	<!-- ADD EVENTS PAGE -->
+	<div data-role="page" id="create" data-theme="b">
+		<!-- HEADER -->
+		<div data-role="header">
+			<h1>Create Event</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#events" data-icon="calendar" data-transition="slideUp">Events</a></li>
+					<li><a href="#create" data-icon="plus" data-transition="slideUp">Create Event</a></li>
+					<li><a href="#settings" data-icon="gear" data-transition="slideUp">Settings</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- MAIN -->
+		<div data-role="main" class="ui-content">
+			<form id="addEventForm">
+				<label for="name">Event Name</label>
+				<input type="text" name="name" id="name">
+				<label for="date">Event Date</label>
+				<input type="date" name="date" id="date">
+				<label for="location">Event Location</label>
+				<input type="text" name="location" id="location">
+				<label for="type">Event Type</label>
+				<input type="text" name="type" id="type">
+				<label for="description">Description</label>
+				<input type="text" name="description" id="description">
+				<input type="submit" value="Save">
+			</form>
+		</div>
+		<!-- FOOTER -->
+		<div data-role="footer" style="text-align: center">
+			Event Mobile &copy; 2017
+		</div>
+	</div>
+
+
+	<!-- EVENTS DETAILS -->
+	<div data-role="page" id="details" data-theme="a">
+		<!-- HEADER -->
+		<div data-role="header">
+		<a href="#events" data-icon="arrow-l">Back</a>
+			<h1>Event Details</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#events" data-icon="calendar" data-transition="slideUp">Events</a></li>
+					<li><a href="#create" data-icon="plus" data-transition="slideUp">Create Event</a></li>
+					<li><a href="#settings" data-icon="gear" data-transition="slideUp">Settings</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- MAIN -->
+		<div data-role="main" class="ui-content">
+			<div id="eventDetails">
+				<!-- insert data from javascrip -->
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<div data-role="footer" style="text-align: center">
+			Event Mobile &copy; 2017
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
