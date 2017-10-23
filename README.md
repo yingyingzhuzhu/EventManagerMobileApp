@@ -1,12 +1,12 @@
-#Event Manager Android Application
+# Event Manager Android Application
 
-##Function
+## Function
 Add events
 Delete events
 Display events
 
-##Technology
+## Technology
 jQuery Mobile
 
-##Database
-Stored data with MongoDB
+## Database
+MongoDB
