@@ -2,7 +2,9 @@
 
 ## Function
 Add events
+
 Delete events
+
 Display events
 
 ## Technology
